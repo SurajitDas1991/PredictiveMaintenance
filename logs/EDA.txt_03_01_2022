@@ -1,0 +1,15 @@
+2022-01-03 00:01:52,906 - [ERROR] - src.dataprep - (dataprep.py).separate_label_feature(57) - Exception occured in separate_label_feature method of the EDA class. Exception message:  "['Target'] not found in axis"
+Traceback (most recent call last):
+  File "c:\Home\Git\ProjectsForInterview\PredictiveMaintenance\src\dataprep.py", line 51, in separate_label_feature
+    self.X = data.drop(
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\frame.py", line 4906, in drop
+    return super().drop(
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\generic.py", line 4150, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\generic.py", line 4185, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\indexes\base.py", line 6017, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['Target'] not found in axis"

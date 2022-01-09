@@ -1,0 +1,30 @@
+2022-01-02 19:08:53,554 - [ERROR] - src.dataprep - (dataprep.py).separate_label_feature(57) - Exception occured in separate_label_feature method of the EDA class. Exception message:  Boolean array expected for the condition, not object
+Traceback (most recent call last):
+  File "c:\Home\Git\ProjectsForInterview\PredictiveMaintenance\src\dataprep.py", line 54, in separate_label_feature
+    self.Y = data[label_column_name]  # Filter the Label columns
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\frame.py", line 3445, in __getitem__
+    return self.where(key)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\frame.py", line 10736, in where
+    return super().where(cond, other, inplace, axis, level, errors, try_cast)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\generic.py", line 9032, in where
+    return self._where(cond, other, inplace, axis, level, errors=errors)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\generic.py", line 8788, in _where
+    raise ValueError(msg.format(dtype=dt))
+ValueError: Boolean array expected for the condition, not object
+2022-01-02 19:10:51,783 - [ERROR] - src.dataprep - (dataprep.py).separate_label_feature(57) - Exception occured in separate_label_feature method of the EDA class. Exception message:  Boolean array expected for the condition, not object
+Traceback (most recent call last):
+  File "c:\Home\Git\ProjectsForInterview\PredictiveMaintenance\src\dataprep.py", line 54, in separate_label_feature
+    self.Y = data[label_column_name]  # Filter the Label columns
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\frame.py", line 3445, in __getitem__
+    return self.where(key)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\frame.py", line 10736, in where
+    return super().where(cond, other, inplace, axis, level, errors, try_cast)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\generic.py", line 9032, in where
+    return self._where(cond, other, inplace, axis, level, errors=errors)
+  File "C:\Home\Git\ProjectsForInterview\PredictiveMaintenance\venv\lib\site-packages\pandas\core\generic.py", line 8788, in _where
+    raise ValueError(msg.format(dtype=dt))
+ValueError: Boolean array expected for the condition, not object
